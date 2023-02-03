@@ -29,15 +29,15 @@ public class Main {
 
         //AES.generateSessionKey("aes_key.key", "AES", 128);
 
-        //AES.AES_ECBencrypt("aes_key.key", "response.txt", "response.sec");
-        //AES.AES_ECBdecrypt("response.sec", "test_key.key", "testresponse.txt");
+        AES.AES_ECBencrypt("aes_key.key", "response.txt", "response.sec");
+        AES.AES_ECBdecrypt("response.sec", "test_key.key", "testresponse.txt");
         //RSA.encryptKey("aes_key.key", "aes_key.sec", ks, "ismasero");
 
         //testing with my certificate
         //RSA.encryptKey("aes_key.key", "test_key.sec", ks, "marakey");
         //RSA.decryptKey("test_key.sec", "test_key.key", ks, "marakey");
         //RSA.encryptWithPrivate("aes_key.key", "aes_key_enc_with_my_private_key.sec", ks, "marakey");
-        RSA.decryptWithPublic("aes_key_enc_with_my_private_key.sec", "aes_key_dec_with_public.key", ks, "marakey");
+        //RSA.decryptWithPublic("aes_key_enc_with_my_private_key.sec", "aes_key_dec_with_public.key", ks, "marakey");
 
     }
 }
